@@ -1,13 +1,4 @@
 "use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
 var index_1 = require('../index');
@@ -113,24 +104,21 @@ var SortablejsDirective = (function () {
         enumerable: true,
         configurable: true
     });
-    __decorate([
-        core_1.Input('sortablejs'), 
-        __metadata('design:type', Object)
-    ], SortablejsDirective.prototype, "_items", void 0);
-    __decorate([
-        core_1.Input('sortablejsOptions'), 
-        __metadata('design:type', Object)
-    ], SortablejsDirective.prototype, "_options", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], SortablejsDirective.prototype, "runInsideAngular", void 0);
-    SortablejsDirective = __decorate([
-        core_1.Directive({
-            selector: '[sortablejs]'
-        }), 
-        __metadata('design:paramtypes', [core_1.ElementRef, core_1.NgZone])
-    ], SortablejsDirective);
+    SortablejsDirective.decorators = [
+        { type: core_1.Directive, args: [{
+                    selector: '[sortablejs]'
+                },] },
+    ];
+    /** @nocollapse */
+    SortablejsDirective.ctorParameters = function () { return [
+        { type: core_1.ElementRef, },
+        { type: core_1.NgZone, },
+    ]; };
+    SortablejsDirective.propDecorators = {
+        '_items': [{ type: core_1.Input, args: ['sortablejs',] },],
+        '_options': [{ type: core_1.Input, args: ['sortablejsOptions',] },],
+        'runInsideAngular': [{ type: core_1.Input },],
+    };
     return SortablejsDirective;
 }());
 exports.SortablejsDirective = SortablejsDirective;
