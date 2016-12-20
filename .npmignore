@@ -2,3 +2,4 @@ node_modules
 typings
 **/*.ts
 !index.d.ts
+!src/sortable.directive.d.ts

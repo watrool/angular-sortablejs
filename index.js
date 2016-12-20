@@ -1,7 +1,11 @@
 "use strict";
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var sortable_directive_1 = require('./src/sortable.directive');
+__export(require('./src/sortable.directive'));
 var SortablejsModule = (function () {
     function SortablejsModule() {
     }

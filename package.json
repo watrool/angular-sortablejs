@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "tslint": "tslint ./app/**/*.ts -t verbose"
+    "tslint": "tslint ./app/**/*.ts -t verbose",
+    "build:aot": "ngc -p tsconfig-aot.json"
   },
   "repository": {
     "type": "git",
